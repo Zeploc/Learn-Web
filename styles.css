@@ -19,7 +19,7 @@ nav ul
 
 }
 
-nav li
+nav li, .main-footer li
 {
     font-weight: 300;
     font-size: 1.3em;
@@ -28,17 +28,34 @@ nav li
     padding: .5em;
 }
 
+.main-footer li
+{
+    filter:brightness(10);
+    border-bottom: 1px solid rgba(255, 255, 255, .6);
+    margin: .3em;
+}
+.main-footer ul
+{
+    border-top: 1px solid rgba(255, 255, 255, .3);
+}
+.main-footer li:hover
+{
+    border-bottom: 2px solid rgba(255, 255, 255, .9);
+    padding: .8em;
+    margin: .0em;
+    background-color: rgba(255, 255, 255, .3);
+}
+
 nav li:hover
 {
     background-color: rgba(255, 255, 255, .3);
 }
 
-.main-nav
+.main-nav, .main-footer
 {
     text-align: center;
     
-    /*Border doesn't work?*/
-    /*border-bottom: 1px solid rgba(255, 255, 255 .3);*/
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
 }
 
 .main-nav li
@@ -46,7 +63,7 @@ nav li:hover
     padding: 10 5%;
 }
 
-.main-header
+.main-header, .main-footer
 {
     background-image: url("Images/HighresScreenshot00002.png");
     background-size: cover;
@@ -55,6 +72,11 @@ nav li:hover
     margin: 0;
     min-height: 100px;
     padding-bottom: 30px;
+}
+.main-footer
+{
+    padding-bottom: 1px;
+    border-top: 1px solid rgba(255, 255, 255, .6);
 }
 
 .web-name
@@ -66,6 +88,11 @@ nav li:hover
     font-variant: small-caps;
 }
 
+h2.web-name
+{
+    color: rgb(201, 201, 201);
+}
+
 .web-name-large
 {
     font-size: 5em;
@@ -74,7 +101,9 @@ nav li:hover
 .header-play
 {
     padding: 2em;
+    max-width: 800px;
     margin: 2em;
+    
 }
 
 .number-field
@@ -102,6 +131,25 @@ p
 {
     margin: 1em;
 }
+.Hero-Image
+{
+    background-color: #333;
+    width: 100%;
+    height: auto;
+}
+.Info-Image
+{
+    float: left;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 15px;
+    border-radius: 50%;
+}
+.Info-Text
+{
+    font-size: 150%;
+}
 
 
 /* Table Styling*/
@@ -121,4 +169,10 @@ p
     margin: 40px auto;
     border: 2px solid black;
     padding: 4px;
+}
+
+.Games-Container
+{
+    text-align: center;
+    padding: 0 1.5em;
 }

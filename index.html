@@ -6,20 +6,22 @@
         <header class="main-header">
             <title>Practice Web</title>
             <meta name="description" content="Practicing and learning Web Development">
-            <nav class="main-nav">
+            <nav class="nav main-nav">
                 <ul>
                     <a href="index.html"><li>Home</li></a>
                     <a href="Mythos.html"><li>Mythos</li></a>
                 </ul>
             </nav>
-            <h1 class="web-name web-name-large">Enticing Games </h1>
-            <a href="Mythos.html#Play"><button class="header-play">Play Mythos</button></a>
+            <h1 class="web-name web-name-large">Games Graph</h1>
+            <div class="container">
+                <a href="Mythos.html#Play"><button class="btn border-btn">Play Mythos</button></a>
+            </div>
         </header>
         <!-- Single Line: hr-->
         <hr>
         
         <section>
-            <button>&#9658;</button>
+            <button class="circle-button btn border-btn">&#9658;</button>
             <p>
                 hello I'm a page, and I have been web
             </p>
@@ -33,111 +35,83 @@
         <br>
         <hr>    
         <section class="Games-Container">
-            <h2>Cool Games</h2>
+            <h2>Top Games</h2>
             <p>Last Updated:</p>
             <p class="date">3/04/2022</p>
             <div id="Games-Table">    
                 <div class="Row">
-                    Game
-                    &lt;&gt;
-                    Release Date
-                    &lt;&gt;
-                    Developer
-                    &lt;&gt;
-                    Publisher
-                    &lt;&gt;
-                    Steam 
-                    <hr>
+                    <span class="row-game">Game</span>
+                    <span class="row-date">Release Date</span>
+                    <span class="row-developer">Developer</span>
+                    <span class="row-publisher">Publisher</span>
+                    <span class="row-steam-button">Steam</span> 
                 </div> 
                 
                 <div class="Row">
-                    <strong>Mythos Party</strong>
-                    &lt;&gt;
-                    <span class="date">27 Sept 2022</span>
-                    &lt;&gt;
-                    <span>Skyward Studios</span>
-                    &lt;&gt;
-                    <span>Skyward Studios</span>
-                    &lt;&gt;
+                    <span class="row-game">Mythos Party</span>
+                    <span class="row-date">27 Sept 2022</span>
+                    <span class="row-developer">Skyward Studios</span>
+                    <span class="row-publisher">Skyward Studios</span>
                     <a href="https://store.steampowered.com/app/1340690/Mythos_Party/" target="_blank">
-                        <button>Steam</button>
+                        <button class="row-steam-button btn border-btn">Steam</button>
                     </a>
-                    &lt;&gt;
-                    <a href="Mythos.html">
-                        <button>Page </button></a>
-                    <hr>
+                    <!-- <a href="Mythos.html">
+                        <button>Page </button></a> -->
                 </div>
                 <div class="Row">
-                    <strong>Halo Infinite</strong>
-                    &lt;&gt;
-                    <span class="date">16 Nov 2021</span>
-                    &lt;&gt;
-                    <span>343 Industries</span>
-                    &lt;&gt;
-                    <span>Xbox Game Studios</span>
-                    &lt;&gt;
+                    <span class="row-game">Halo Infinite</span>
+                    <span class="row-date">16 Nov 2021</span>
+                    <span class="row-developer">343 Industries</span>
+                    <span class="row-publisher">Xbox Game Studios</span>
                     <a href="https://store.steampowered.com/app/1240440/Halo_Infinite/" target="_blank">
-                        <button>Steam</button>   
+                        <button class="row-steam-button btn border-btn">Steam</button>   
                     </a>
-                    <hr>                 
                 </div>
                 <div class="Row">
-                    <strong>Equilinox</strong>
-                    &lt;&gt;
-                    <span class="date">24 Nov 2021</span>
-                    &lt;&gt;
-                    <span>ThinMatrix</span>
-                    &lt;&gt;
-                    <span>ThinMatrix</span>
-                    &lt;&gt;
+                    <span class="row-game">Equilinox</span>
+                    <span class="row-date">24 Nov 2021</span>
+                    <span class="row-developer">ThinMatrix</span>
+                    <span  class="row-publisher">ThinMatrix</span>
                     <a href="https://store.steampowered.com/app/853550/Equilinox/" target="_blank">
-                        <button>Steam</button>   
+                        <button class="row-steam-button btn border-btn">Steam</button>   
                     </a>
-                    <hr>                 
                 </div>
                 <div class="Row">
-                    <strong>Counter-Strike: Global Offensive</strong>
-                    &lt;&gt;
-                    <span class="date">22 Aug 2012</span>
-                    &lt;&gt;
-                    <span>Valve, Hidden Path Entertainment</span>
-                    &lt;&gt;
-                    <span>Valve</span>
-                    &lt;&gt;
+                    <span class="row-game">Counter-Strike: Global Offensive</span>
+                    <span class="row-date">22 Aug 2012</span>
+                    <span class="row-developer">Valve, Hidden Path Entertainment</span>
+                    <span  class="row-publisher">Valve</span>
                     <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/" target="_blank">
-                        <button>Steam</button>   
+                        <button class="row-steam-button btn border-btn">Steam</button>   
                     </a>
-                    <hr>                 
                 </div>
                 <div class="Row">
-                    <strong>Terraria</strong>
-                    &lt;&gt;
-                    <span class="date">17 May 2011</span>
-                    &lt;&gt;
-                    <span>Re-Logic</span>
-                    &lt;&gt;
-                    <span>Re-Logic</span>
-                    &lt;&gt;
+                    <span class="row-game">Terraria</span>
+                    <span class="row-date">17 May 2011</span>
+                    <span class="row-developer">Re-Logic</span>
+                    <span  class="row-publisher">Re-Logic</span>
                     <a href="https://store.steampowered.com/app/105600/Terraria/" target="_blank">
-                        <button>Steam</button>  
+                        <button class="row-steam-button btn border-btn">Steam</button>  
                     </a>                 
                 </div>
             </div>
         </section>
-        <footer class="main-footer">
-            <h1 class="web-name">Games</h1>
-            <ul>
-                <li><a href="https://discord.gg/TxRTwMkRzV"target="_blank">
-                    <image src="Images/DiscordIcon.png" alt="Discord Icon" width="30">                        
-                    </a></li> 
-                <li><a href="https://www.twitch.tv/skywardstudios"target="_blank">
-                    <image src="Images/Twitch Logo.png"alt="Twitch Icon" width="30">
-                        
-                    </a></li>
-                <li><a href="https://twitter.com/studio_skyward"target="_blank">
-                    <image src="Images/twitter-logo-blue.png"alt="Twitter Icon" width="30">
-                    </a></li>
-            </ul>
+        <footer>
+            <div class="container main-footer">
+                <h1 class="web-name">Games</h1>
+                <ul class="nav">
+                    <li><a href="https://discord.gg/TxRTwMkRzV"target="_blank">
+                        <image src="Images/DiscordIcon.png" alt="Discord Icon">                        
+                        </a></li> 
+                    <li><a href="https://www.twitch.tv/skywardstudios"target="_blank">
+                        <image src="Images/Twitch Logo.png"alt="Twitch Icon">
+                            
+                        </a></li>
+                    <li><a href="https://twitter.com/studio_skyward"target="_blank">
+                        <image src="Images/twitter-logo-blue.png"alt="Twitter Icon" >
+                        </a></li>
+                </ul>
+            </div>
         </footer>
     
     </body>

@@ -35,6 +35,12 @@ html, body{
     background-color: rgba(255, 255, 255, .3);
 }
 
+.btn-current-header, .nav li.btn-current-header:hover
+{
+    background-color: rgba(156, 156, 156, 0.3);
+}
+
+
 .main-nav, .main-footer
 {
     text-align: center;
@@ -57,6 +63,7 @@ html, body{
     min-height: 100px;
     padding-bottom: 30px;
 }
+
 
 .web-name
 {
@@ -85,7 +92,7 @@ h2.web-name
     cursor: pointer;
 }
 
-.border-btn
+.btn-border
 {
     /*margin: 1em 40% .5em 40%;*/
     color: white;
@@ -96,17 +103,23 @@ h2.web-name
     border-radius: 0;
     padding: .3em 2em 0.3em 2em;
     /*width: 20%;*/
+    /* display block (not inline) causes underline to display */
     display:block;
     margin: 0 auto;
     font-style: normal;
     text-decoration: none;
 }
-.border-btn:hover
+ .btn-header a button
+{
+    /*Changes underline to white?*/
+    text-decoration:inherit; 
+}
+.btn-border:hover
 {
     background-color: rgba(255, 255, 255, .4);
 }
 
-.circle-button
+.btn-circle
 {    
     font-size: 4em;
     border-radius: 50%;
@@ -115,11 +128,34 @@ h2.web-name
     margin: 0 auto;
     width: 100px;
     height: 100px;
+}
 
+.btn-primary
+{
+    background-color: rgb(211, 169, 105);
+    border: none;
+    border-radius: 0.3em;
+    font-weight: bold;
+}
+.btn-primary:hover
+{
+    background-color: rgb(163, 130, 81);
 }
 
 
 /* Content Styling*/
+.content-section
+{
+    margin: 1em;
+}
+
+.container
+{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
 .number-field
 {
     text-align: center;
@@ -165,6 +201,33 @@ p
     font-size: 150%;
 }
 
+.btn-danger
+{
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    text-transform:uppercase;
+}
+
+.btn-danger:hover
+{
+    background-color: #da3d3d;
+}
+
+.quantity-input
+{
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border:1px solid rgb(211, 169, 105);
+    background-color: rgb(240, 240, 240);
+    padding: 0;
+    text-align: center;
+    font-size: 1.0em;
+    margin-right: 5px;
+}
 
 /* Table Styling*/
 
@@ -187,6 +250,7 @@ p
     padding: 10px;
     border-bottom: 1px solid rgba(0,0,0,0.3);
     margin: 1em;
+    vertical-align:middle;
 }
 
 .row:last-child
@@ -229,6 +293,53 @@ p
     margin: 0;
     font-size: 1.0em;
     display:inline-block;
+}
+
+
+/*Catalogue*/
+.game-item
+{
+    margin:30px;
+}
+
+.game-item-title
+{
+    display:block;
+    width:100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.game-item-image
+{
+    height:250px;
+    width:250px;
+    /* Fill scaling */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.game-item-details 
+{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    text-align: center;
+}
+
+.game-item-description
+{
+    flex-grow: 1;
+    
+}
+
+.game-items
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 

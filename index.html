@@ -1,11 +1,12 @@
 <html>
     <head>
+        <title>Practice Web</title>
+        <meta name="description" content="Practicing and learning Web Development">
         <link rel="stylesheet" href="styles.css"/>
+        <script src="script.js" async></script>
     </head>
     <body>
         <header class="main-header">
-            <title>Practice Web</title>
-            <meta name="description" content="Practicing and learning Web Development">
             <nav class="nav main-nav">
                 <ul>
                     <ahref="index.html"><li class="btn-current-header" >Home</li></a>
@@ -23,14 +24,15 @@
         
         <section>
             <button class="btn-circle btn btn-border">&#9658;</button>
-            <p>
-                hello I'm a page, and I have been web
-            </p>
             <div class="number-field">
-                <p>Enter Number:</p>
-                <input class ="quantity-input" type="number" value="10">
-                <!--Change to X icon from google icons-->
-                <button class="btn btn-danger quantity-reset" type="button">Reset</button>
+                <h3>Enter Max Number:</h3>
+                <div class="number-entry">
+                    <input class ="number-input" type="number" value="10">
+                    <!--Change to X icon from google icons-->
+                    <button class="btn btn-danger number-reset" type="button">Reset</button>
+                </div>
+                 <button class="btn btn-primary btn-generate-number" type="button">Generate Random Number</button>
+                <h2 class="generated-number">0</h2>
             </div>
         </section>    
         <br>

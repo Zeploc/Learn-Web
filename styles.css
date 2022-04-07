@@ -209,6 +209,8 @@ p
     border-radius: .3em;
     font-weight: bold;
     text-transform:uppercase;
+    height: 44px;
+    width: 200px;
 }
 
 .btn-danger:hover
@@ -216,18 +218,38 @@ p
     background-color: #da3d3d;
 }
 
-.quantity-input
+.number-input
 {
-    height: 34px;
-    width: 50px;
+    height: 44px;
+    width: 200px;
     border-radius: 5px;
     border:1px solid rgb(211, 169, 105);
     background-color: rgb(240, 240, 240);
     padding: 0;
     text-align: center;
-    font-size: 1.0em;
+    font-size: 2.0em;
     margin-right: 5px;
+    vertical-align: middle;
 }
+
+.number-entry
+{
+    display: block;
+}
+
+.generated-number
+{    
+    font-size: 3.0em;
+}
+.btn-generate-number
+{
+    display: block;
+    width: 400px;
+    font-size: 1.1em;
+    /* margin: .5em 20% .5em 20%; */
+    margin: 1em auto;
+}
+
 
 /* Table Styling*/
 

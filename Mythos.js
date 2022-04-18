@@ -8,4 +8,7 @@ for (var i = 0; i < Heading2s.length; i++)
         PlayHeading = Heading2s[i];
 }
 if (document.URL.match("#Play") && PlayHeading)
-PlayHeading.scrollIntoView(true);
+    {
+        //PlayHeading.scrollIntoView(true);
+        PlayHeading.scrollIntoView({behavior: "smooth"});
+    }

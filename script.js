@@ -1,12 +1,12 @@
 
-var QuatityResetBtn;
-var QuantityInput;
+let QuatityResetBtn;
+let QuantityInput;
     
-var GenerateButton;
-var GeneratedText;
+let GenerateButton;
+let GeneratedText;
 
-var AddNewRowButton;
-var AddNewRowContainer;
+let AddNewRowButton;
+let AddNewRowContainer;
 
 if (document.readyState == 'loading')
 {
@@ -47,7 +47,7 @@ function Setup()
     if (QuatityResetBtn)
     {
         QuatityResetBtn.addEventListener("click", QuantityReset);
-        console.log(QuatityResetBtn);
+        //console.log(QuatityResetBtn);
     }
     //AddNewRow("Test Game", "17 Nov 2012", "Cool Games", "Best Publisher", "https://github.com/Zeploc");
 }
@@ -66,8 +66,8 @@ function GenerateNumber()
 {
     if (isNaN(QuantityInput.value) || QuantityInput.value <= 0)
         QuantityInput.value = 1;
-    var MaxNumber = QuantityInput.value;
-    var NewNumber = Math.random() * MaxNumber;
+    const MaxNumber = QuantityInput.value;
+    let NewNumber = Math.random() * MaxNumber;
     NewNumber = Math.round(NewNumber);
     if (GeneratedText)
         GeneratedText.textContent = NewNumber;
@@ -91,11 +91,11 @@ function DisplayAddNewRow(visible)
 
 function AddNewRowFromInputs()
 {    
-    var GameName = AddNewRowContainer.getElementsByClassName("row-game")[0].firstElementChild.value;
-    var ReleaseDate = AddNewRowContainer.getElementsByClassName("row-date")[0].firstElementChild.value;
-    var Developer = AddNewRowContainer.getElementsByClassName("row-developer")[0].firstElementChild.value;
-    var Publisher = AddNewRowContainer.getElementsByClassName("row-publisher")[0].firstElementChild.value;
-    var SteamLink = AddNewRowContainer.getElementsByClassName("row-steam-button")[0].value;
+    const GameName = AddNewRowContainer.getElementsByClassName("row-game")[0].firstElementChild.value;
+    const ReleaseDate = AddNewRowContainer.getElementsByClassName("row-date")[0].firstElementChild.value;
+    const Developer = AddNewRowContainer.getElementsByClassName("row-developer")[0].firstElementChild.value;
+    const Publisher = AddNewRowContainer.getElementsByClassName("row-publisher")[0].firstElementChild.value;
+    const SteamLink = AddNewRowContainer.getElementsByClassName("row-steam-button")[0].value;
     if (AddNewRow(GameName, ReleaseDate, Developer, Publisher, SteamLink))
     {
         ClearNewRowInputs();        
@@ -107,7 +107,7 @@ function AddNewRow(GameName, ReleaseDate, Developer, Publisher, SteamLink)
     // Check Fields Valid
     const Fields = [GameName, ReleaseDate, Developer, Publisher, SteamLink];
     const FieldNames = ["Game Name", "Release Date", "Developer", "Publisher", "Steam Link"];
-    for (var i = 0; i < Fields.length; i++)
+    for (let i = 0; i < Fields.length; i++)
     {
         if (Fields[i] == null || Fields[i] == "")
         {
@@ -124,7 +124,7 @@ function AddNewRow(GameName, ReleaseDate, Developer, Publisher, SteamLink)
         return false;
     }
 
-    var Table = document.getElementById("Games-Table");
+    const Table = document.getElementById("Games-Table");
 
     // Copy existing Method
     // var FirstElement = Table.children[1];
@@ -136,7 +136,7 @@ function AddNewRow(GameName, ReleaseDate, Developer, Publisher, SteamLink)
     // NewGameRow.getElementsByClassName("row-steam-button")[0].parentNode.href = SteamLink;
     
     // Create New Method
-    var NewGameRow = document.createElement("div");
+    const NewGameRow = document.createElement("div");
     NewGameRow.classList.add('Row');
     NewGameRow.innerHTML = 
     `

@@ -1,3 +1,40 @@
+.playground-title
+{
+    padding: 30px;
+    padding-bottom: 2px;
+    border-bottom: solid 2px;
+}
+
+/* Buttons */
+html
+{
+    scroll-behavior: smooth;
+    scroll-margin-top: 0px;
+}
+
+.button-base
+{
+    border: solid 4px;
+    border-radius: 5px;
+    display:inline-block;
+    margin: 15px 5vw;
+    padding: 4px 18px;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+
+.button-base:hover
+{
+    background-color: rgba(255, 255, 255, 0.37);
+}
+
+button[disabled].button-base 
+{
+    opacity: 0.5;
+}
+
+/* Container Boxes */
+
 .container-box
 {
     background-color: #adadad25;
@@ -5,6 +42,33 @@
     border: solid 2px #252525a9;
     margin: 15px 5vw;
     border-radius: 5px;
+}
+
+.typing-demo
+{
+    /* Width and step has to be the same, and match text character length 
+    (could be set in js) */
+    width: 11ch;
+    /* For speed to be constant, would have to be set to char length divided by speed */
+    animation: typing 1.4s steps(11), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 2em;
+    /* Has to be monospace to have even typing */
+    font-family: monospace;
+    box-sizing: content-box;
+}
+/* Custom Animations defined */
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+@keyframes blink {
+50% {
+    border-color: transparent
+}
 }
 
 .default-box
@@ -25,7 +89,7 @@
 .flex-fill
 {
     margin: 10px;
-    display: inline-flex;
+    display: inline-flex;    
 }
 
 span.box-sized
@@ -43,4 +107,67 @@ span.box-sized
 .content-box
 {
     box-sizing: content-box;
+}
+
+
+/* Images and Filters */
+
+/* Change to proper grid/flex setup */
+.Shadow-Image
+{
+    width: 100px;
+    margin: 50px;
+}
+
+.Label-Text
+{
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.box-shadow
+{
+    box-shadow: 2px 4px 8px #585858;
+}
+
+.filter-shadow
+{
+    /* Right Distance, Down Distance, Blur Strength, Colour */
+    filter: drop-shadow(2px 8px 2px #585858);
+}
+
+.text-shadow
+{    
+    text-shadow:
+      0px 4px 3px rgba(0,0,0,0.15),
+      0px 8px 1px rgba(0,0,0,0.1);
+}
+
+.filter-grayscale
+{
+    filter:grayscale(100);
+}
+.filter-blur
+{
+    filter:blur(3px);
+}
+.filter-opacity
+{
+    filter:opacity(.2);
+}
+.filter-brightness
+{
+    filter:brightness(100);
+}
+
+/* Form */
+.form-section
+{
+    padding: 8px;
+    /* display: flex;
+    text-align: center;
+    align-items: center; */
 }

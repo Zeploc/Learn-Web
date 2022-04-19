@@ -16,11 +16,64 @@
             <h1 class="web-name web-name-large">Playground </h1>
             <h2 class="web-name"> CSS Experimentation</h2>
         </header>
+
+        <!-- Buttons -->
+        <section>
+            <h2 class="playground-title">Buttons</h2>
+            
+            <div class="container-box">
+                <a href="#Test-Boxes">
+                    <div class="button-base">
+                        Test Boxes (Link)
+                    </div>
+                </a>
+                <a href="#Images-Filters">
+                    <div class="button-base">
+                        Images and Filters (Link)
+                    </div>
+                </a>
+            </div>
+            <div class="container-box">
+                <a href="/Images/HighresScreenshot00002.png" target="_blank" title="Opens New Tab">
+                    <div class="button-base">
+                        Open Image
+                    </div>
+                </a>
+                <a href="/Images/HighresScreenshot00002.png" download  title="Downloads image to local computer">
+                    <div class="button-base">
+                        Download Image
+                    </div>
+                </a>
+            </div>
+            
+            <div class="container-box">
+                <!-- autofocus option-->
+                <button class="button-base btn">
+                    Button - Autofocused
+                </button>
+                <button disabled class="button-base btn">
+                    Styled Button - Disabled
+                </button>
+            </div>
+
+            <div class="container-box">
+                <button >
+                    Normal Button
+                </button>
+                <button disabled>
+                    Disabled Button
+                </button>
+            </div>
+            
+        </section>
+
         <!-- Boxes -->
         <section>
-            <h2>Test Boxes</h2>
+            <h2 id="Text-Boxes" class="playground-title">Test Boxes</h2>
             <div class="container-box">
-                Example Box
+                <div class="typing-demo">
+                    Example Box
+                </div>
             </div>
             <div class="container-box">
                 <span class="default-box content-sized">
@@ -47,6 +100,126 @@
                 </div>
             </div>
         </section>
+        <!-- Images and Filters -->
+        <section>
+            <h2 id="Images-Filters" class="playground-title">Images and Filters</h2>
+            <div>
+                <span class="Shadow-Image Label-Text">None</span>
+                <span class="Shadow-Image Label-Text">Box Shadow</span>
+                <span class="Shadow-Image Label-Text">Filter Shadow</span>
+                <span class="Shadow-Image Label-Text text-shadow">Text Shadow</span>
+            </div>
+
+            <image class="Shadow-Image" src="Images/DiscordIcon.png" alt="Discord Icon">                        
+            <image class="Shadow-Image box-shadow" src="Images/DiscordIcon.png" alt="Discord Icon">                        
+            <image class="Shadow-Image filter-shadow" src="Images/DiscordIcon.png" alt="Discord Icon">                        
+            
+            <div>
+                <span class="Shadow-Image Label-Text">Grayscale Filter</span>
+                <span class="Shadow-Image Label-Text">Blur Filter</span>
+                <span class="Shadow-Image Label-Text">Opacity Filter</span>
+                <span class="Shadow-Image Label-Text">Brightness Filter</span>
+            </div>
+
+            <image class="Shadow-Image filter-grayscale" src="Images/DiscordIcon.png" alt="Discord Icon">                        
+            <image class="Shadow-Image filter-blur" src="Images/DiscordIcon.png" alt="Discord Icon">                        
+            <image class="Shadow-Image filter-opacity" src="Images/DiscordIcon.png" alt="Discord Icon">                        
+            <image class="Shadow-Image filter-brightness" src="Images/DiscordIcon.png" alt="Discord Icon">                        
+            
+        </section>
+        
+        <!-- Form & Inputs -->
+        <section>
+            <h2 id="Form-Inputs" class="playground-title">Form and Inputs</h2>
+        <form class="container-box" action="/" method="POST">
+            
+            <!-- This prevents a `submit` action from firing which may be useful sometimes inside a form -->
+            <button class="form-section" type="button">Non-submitting button</button>
+
+            <div class="form-section">
+                Text Field:
+                <input type="text" name="text" id="text">
+            </div>
+            <div class="form-section">
+                Number Field:
+                <input type="number" name="number" id="number">
+            </div>
+            <div class="form-section">
+                Check Option 1:
+                <input type="checkbox" name="check-1" id="check-1">
+                Check Option  2:
+                <input type="checkbox" name="check-2" id="check-2">
+            </div>
+            <div class="form-section">
+                Radio Option 1:
+                <input type="radio" name="radio-1" id="radio-1">
+                Radio Option  2:
+                <input type="radio" name="radio-2" id="radio-2">
+            </div>
+            <div class="form-section">
+                Slider:
+                <input type="range" name="slider" id="slider">
+            </div>
+            <div class="form-section">
+                Colour:
+                <input type="color" name="colour" id="colour">
+            </div>
+            <div class="form-section">
+                Date:
+                <input type="date" name="date" id="date">
+            </div>
+            <div class="form-section">
+                Time:
+                <input type="time" name="time" id="time">
+            </div>
+            <div class="form-section">
+                Date Time:
+                <input type="datetime-local" name="date-time" id="date-time">
+            </div>
+            <div class="form-section">
+                Month:
+                <input type="month" name="month" id="month">
+            </div>
+            <div class="form-section">
+                Week:
+                <input type="week" name="week" id="week">
+            </div>
+            <div class="form-section">
+                File:
+                <input type="file" name="file" id="file">
+            </div>
+            <div class="form-section">
+                Search:
+                <!-- Address? Add custom list? -->
+                <input type="search" name="search" id="search">
+            </div>
+            <div class="form-section">
+                Email:
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="form-section">
+                Password:
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="form-section">
+                URL:
+                <input type="url" name="url" id="url">
+            </div>
+          
+
+            <div class="form-section">
+                <!-- If you want to be more explicit... (default type is submit) -->
+                <!-- formnovalidate & formtarget="_blank" -->
+                <button type="submit">Submit</button>
+                <button formaction="/elsewhere/" type="submit">Submit Elsewhere</button>
+            
+                <!-- ...or clear the form inputs back to their initial values -->
+                <button type="reset">Reset</button>
+            </div>
+          
+          </form>
+        </section>
+
         <footer>
             <div class="container main-footer">
                 <h1 class="web-name">Footer not Footing</h1>

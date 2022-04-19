@@ -16,6 +16,17 @@ else
 {
     Setup();
 }
+window.addEventListener("onbeforeunload", function(event) {
+
+    if (this.document.location.pathname == "/index.html")
+    {
+        // Doesn't seem to work :(
+        this.alert("uh oh");
+        event.preventDefault();
+        return "";
+    }
+    // Remind user to save their work or whatever.
+  });
 
 function Setup()
 {
@@ -144,7 +155,7 @@ function AddNewRow(GameName, ReleaseDate, Developer, Publisher, SteamLink)
         <span class="row-date">${ReleaseDate}</span>
         <span class="row-developer">${Developer}</span>
         <span class="row-publisher">${Publisher}</span>
-        <a href="${SteamLink}" target="_blank">
+        <a href="${SteamLink}" target="_blank" rel="noopener noreferrer">
             <button class="row-steam-button btn btn-primary">Steam</button>
         </a>
     `;

@@ -12,6 +12,12 @@ html, body{
     margin: 0;
     padding: 0;
 }
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration:none; }
+a:active { text-decoration: none; }
+
 /* Header Styling*/
 
 .nav ul
@@ -109,11 +115,11 @@ h2.web-name
     font-style: normal;
     text-decoration: none;
 }
- .btn-header a button
-{
-    /*Changes underline to white?*/
-    text-decoration:inherit; 
-}
+/* .btn-header a button
+{*/
+   /*Changes underline to white?*/
+   /*text-decoration:inherit; 
+} */
 .btn-border:hover
 {
     background-color: rgba(255, 255, 255, .4);

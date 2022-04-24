@@ -12,6 +12,27 @@ html, body{
     margin: 0;
     padding: 0;
 }
+*::-webkit-scrollbar
+{
+    width: 14px;
+    background-color: #eff1f5;
+}
+*::-webkit-scrollbar-track
+{
+    border-radius: 3px;
+    background-color: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb
+  {
+    border-radius:5px;
+    background-color:#525252;
+    border:2px solid #eff1f5
+  }
+  *::-webkit-scrollbar-thumb:hover
+  {
+     background-color:#474747;
+   }
 
 a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
@@ -170,7 +191,7 @@ h2.web-name
 
 html
 {
-    background-color:rgb(97, 115, 119);
+    background-color:rgb(124, 124, 124);
 }
 
 h1 
@@ -236,6 +257,11 @@ p
     font-size: 2.0em;
     margin-right: 5px;
     vertical-align: middle;
+}
+.number-input:out-of-range
+{
+    background-color: rgb(247, 186, 186);
+    border: 1px solid red;
 }
 
 

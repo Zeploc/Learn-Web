@@ -32,6 +32,7 @@
                         Images and Filters (Link)
                     </div>
                 </a>
+                <a href="#demo-modal" class="button-base">Open Demo Modal</a>
             </div>
             <div class="container-box">
                 <a href="/Images/HighresScreenshot00002.png" target="_blank" title="Opens New Tab">
@@ -57,19 +58,36 @@
             </div>
 
             <div class="container-box">
-                <button >
+                <button onclick="console.log('Normal Button Clicked!')">
                     Normal Button
                 </button>
                 <button disabled>
                     Disabled Button
                 </button>
             </div>
+
             
+            <div id="demo-modal" class="modal">
+                <div class="modal__content">
+                    <h1>CSS Only Modal</h1>
+
+                    <p>
+                        Using the :target pseudo-class to create a modals with Zero JavaScript.
+                    </p>
+
+                    <div class="modal__footer">
+                        Made by <a href="https://twitter.com/denicmarko" target="_blank">@denicmarko</a>
+                    </div>
+
+                    <a href="#" class="modal__close">&times;</a>
+                </div>
+            </div>
+
         </section>
 
         <!-- Boxes -->
         <section>
-            <h2 id="Text-Boxes" class="playground-title">Test Boxes</h2>
+            <h2 id="Test-Boxes" class="playground-title">Test Boxes</h2>
             <div class="container-box">
                 <div class="typing-demo">
                     Example Box
@@ -98,36 +116,61 @@
                     Box sizing: border-box <br> <br>
                     Total Box size is equal to dimensions - Including Padding & Border 
                 </div>
+                <div class="default-box gradient-box box-sized">
+                    Gradient Box
+                </div>
             </div>
         </section>
         <!-- Images and Filters -->
         <section>
             <h2 id="Images-Filters" class="playground-title">Images and Filters</h2>
-            <div>
-                <span class="Shadow-Image Label-Text">None</span>
-                <span class="Shadow-Image Label-Text">Box Shadow</span>
-                <span class="Shadow-Image Label-Text">Filter Shadow</span>
-                <span class="Shadow-Image Label-Text text-shadow">Text Shadow</span>
-            </div>
-
-            <image class="Shadow-Image" src="Images/DiscordIcon.png" alt="Discord Icon">                        
-            <image class="Shadow-Image box-shadow" src="Images/DiscordIcon.png" alt="Discord Icon">                        
-            <image class="Shadow-Image filter-shadow" src="Images/DiscordIcon.png" alt="Discord Icon">                        
-            
-            <div>
-                <span class="Shadow-Image Label-Text">Grayscale Filter</span>
-                <span class="Shadow-Image Label-Text">Blur Filter</span>
-                <span class="Shadow-Image Label-Text">Opacity Filter</span>
-                <span class="Shadow-Image Label-Text">Brightness Filter</span>
-            </div>
-
-            <image class="Shadow-Image filter-grayscale" src="Images/DiscordIcon.png" alt="Discord Icon">                        
-            <image class="Shadow-Image filter-blur" src="Images/DiscordIcon.png" alt="Discord Icon">                        
-            <image class="Shadow-Image filter-opacity" src="Images/DiscordIcon.png" alt="Discord Icon">                        
-            <image class="Shadow-Image filter-brightness" src="Images/DiscordIcon.png" alt="Discord Icon">                        
-            
+            <section class="image-section">
+                <div>
+                    <span class="Shadow-Image Label-Text">None</span>
+                    <image class="Shadow-Image" src="Images/DiscordIcon.png" alt="Discord Icon">                        
+                </div>
+                <div>
+                    <span class="Shadow-Image Label-Text">Box Shadow</span>
+                    <image class="Shadow-Image box-shadow" src="Images/DiscordIcon.png" alt="Discord Icon">                        
+                </div>
+                <div>
+                    <span class="Shadow-Image Label-Text">Filter Shadow</span>
+                    <image class="Shadow-Image filter-shadow" src="Images/DiscordIcon.png" alt="Discord Icon">   
+                </div>
+                <div>
+                    <span class="Shadow-Image Label-Text">Grayscale Filter</span>
+                    <image class="Shadow-Image filter-grayscale" src="Images/DiscordIcon.png" alt="Discord Icon">  
+                </div>
+                <div>
+                    <span class="Shadow-Image Label-Text">Blur Filter</span>
+                    <image class="Shadow-Image filter-blur" src="Images/DiscordIcon.png" alt="Discord Icon"> 
+                </div>
+                <div>
+                    <span class="Shadow-Image Label-Text">Opacity Filter</span>
+                    <image class="Shadow-Image filter-opacity" src="Images/DiscordIcon.png" alt="Discord Icon">   
+                </div>
+                <div>
+                    <span class="Shadow-Image Label-Text">Brightness Filter</span>
+                    <image class="Shadow-Image filter-brightness" src="Images/DiscordIcon.png" alt="Discord Icon">  
+                </div>
+            </section>       
         </section>
-        
+        <!-- Text -->
+        <section>
+            <h2 id="Text" class="playground-title">Text</h2>
+            <section class="container-box">
+                <div class="Text-section">
+                    <span class="text-shadow">Text Shadow</span>
+                </div>
+                <div class="Text-section">
+                    <span class="tooltip" data-tooltip="This a hover tip example">Hover Tip</span>
+                </div>
+                <div class="Text-section">
+                    <span class="background-clip">Background Clip</span>
+                </div>
+            </section>
+
+        </section>
         <!-- Form & Inputs -->
         <section>
             <h2 id="Form-Inputs" class="playground-title">Form and Inputs</h2>
@@ -137,72 +180,72 @@
             <button class="form-section" type="button">Non-submitting button</button>
 
             <div class="form-section">
-                Text Field:
+                <span>Text Field:</span>
                 <input type="text" name="text" id="text">
             </div>
             <div class="form-section">
-                Number Field:
+                <span>Number Field:</span>
                 <input type="number" name="number" id="number">
             </div>
             <div class="form-section">
-                Check Option 1:
+                <span>Check Option 1:</span>
                 <input type="checkbox" name="check-1" id="check-1">
-                Check Option  2:
+                <span>Check Option  2:</span>
                 <input type="checkbox" name="check-2" id="check-2">
             </div>
             <div class="form-section">
-                Radio Option 1:
+                <span>Radio Option 1:</span>
                 <input type="radio" name="radio-1" id="radio-1">
-                Radio Option  2:
+                <span>Radio Option  2:</span>
                 <input type="radio" name="radio-2" id="radio-2">
             </div>
             <div class="form-section">
-                Slider:
+                <span>Slider:</span>
                 <input type="range" name="slider" id="slider">
             </div>
             <div class="form-section">
-                Colour:
+                <span>Colour:</span>
                 <input type="color" name="colour" id="colour">
             </div>
             <div class="form-section">
-                Date:
+                <span>Date:</span>
                 <input type="date" name="date" id="date">
             </div>
             <div class="form-section">
-                Time:
+                <span>Time:</span>
                 <input type="time" name="time" id="time">
             </div>
             <div class="form-section">
-                Date Time:
+                <span>Date Time:</span>
                 <input type="datetime-local" name="date-time" id="date-time">
             </div>
             <div class="form-section">
-                Month:
+                <span>Month:</span>
                 <input type="month" name="month" id="month">
             </div>
             <div class="form-section">
-                Week:
+                <span>Week:</span>
                 <input type="week" name="week" id="week">
             </div>
             <div class="form-section">
-                File:
+                <span>File:</span>
                 <input type="file" name="file" id="file">
             </div>
             <div class="form-section">
-                Search:
+                <span>Search:</span>
                 <!-- Address? Add custom list? -->
                 <input type="search" name="search" id="search">
             </div>
             <div class="form-section">
-                Email:
+                <span>Email:</span>
                 <input type="email" name="email" id="email">
             </div>
             <div class="form-section">
-                Password:
+                <span>Password:</span>
                 <input type="password" name="password" id="password">
             </div>
             <div class="form-section">
-                URL:
+                <span>URL:</span>
                 <input type="url" name="url" id="url">
             </div>
           

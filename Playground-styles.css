@@ -145,16 +145,61 @@ button[disabled].button-base
     cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚀</text></svg>"), auto;
 }
 
+.container-flex-fill
+{
+    display: flex;
+    align-items: center;
+}
+
+.flex-box
+{
+    width: 100px;
+    height: 100px;
+}
+
+.container-flex-centered
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container-flex-space-between
+{
+    justify-content: space-between;
+}
+.container-flex-space-around
+{
+    justify-content: space-around;
+}
+.container-flex-end
+{
+    display: flex;
+    justify-content: flex-end;
+}
+.container-flex-start
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container-flex-wrap
+{
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .content-sized
 {
     margin: 0px;
     padding: 10px;
+
 }
 
 .flex-fill
 {
-    margin: 10px;
-    display: inline-flex;    
+    margin: 10px; 
+    flex-grow: 1;
+    text-align: center;
 }
 
 span.box-sized

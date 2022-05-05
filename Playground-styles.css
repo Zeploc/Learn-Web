@@ -157,10 +157,13 @@ button[disabled].button-base
     height: 100px;
 }
 
-.container-flex-centered
+.container-flex
 {
     display: flex;
-    align-items: center;
+}
+
+.container-flex-space-evenly
+{
     justify-content: space-evenly;
 }
 .container-flex-space-between
@@ -171,6 +174,11 @@ button[disabled].button-base
 {
     justify-content: space-around;
 }
+.container-flex-centered
+{
+    display: flex;
+    justify-content: center;
+}
 .container-flex-end
 {
     display: flex;
@@ -180,6 +188,23 @@ button[disabled].button-base
 {
     display: flex;
     justify-content: flex-start;
+}
+
+.container-flex-align
+{
+    height: 400px;
+}
+.container-flex-align-space-evenly
+{
+    align-content: space-evenly;
+}
+.container-flex-align-start
+{
+    align-content: flex-start
+}
+.container-flex-align-end
+{
+    align-content: flex-end
 }
 
 .container-flex-wrap

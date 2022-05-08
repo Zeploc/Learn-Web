@@ -150,6 +150,18 @@ button[disabled].button-base
     display: flex;
     align-items: center;
 }
+.content-sized
+{
+    margin: 0px;
+    padding: 10px;
+}
+.flex-fill
+{
+    margin: 10px; 
+    flex-grow: 1;
+    flex-shrink: 0;
+    text-align: center;
+}
 
 .flex-box
 {
@@ -189,11 +201,34 @@ button[disabled].button-base
     display: flex;
     justify-content: flex-start;
 }
+.flex-no-shrink 
+{
+    flex-shrink: 0;
+}
+.flex-grow
+{
+    flex-grow: 1;
+}
+.self-aligned
+{
+    align-self: flex-start;
+}
 
 .container-flex-align
 {
-    height: 400px;
+    min-height: 800px;
+    align-items: center;
 }
+
+.align-items-start
+{
+    align-items: flex-start;
+}
+.align-items-end
+{
+    align-items: flex-end;
+}
+
 .container-flex-align-space-evenly
 {
     align-content: space-evenly;
@@ -209,23 +244,14 @@ button[disabled].button-base
 
 .container-flex-wrap
 {
-    align-items: center;
     flex-wrap: wrap;
 }
-
-.content-sized
+.container-flex-wrap div
 {
-    margin: 0px;
-    padding: 10px;
-
+    width: 150px;
 }
 
-.flex-fill
-{
-    margin: 10px; 
-    flex-grow: 1;
-    text-align: center;
-}
+
 
 span.box-sized
 {

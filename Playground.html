@@ -102,7 +102,7 @@
                 </span>
             </div>
             <div class="container-box ">
-                <h2>Flex Boxs</h3>
+                <h2>Flex Boxes</h3>
                 <h3>No Wrap - Justify Space Evenly</h3>
                 <div class="container-flex container-flex-space-evenly">
                     <div class="default-box flex-box"> </div>
@@ -151,6 +151,38 @@
                     <div class="default-box flex-box"> </div>
                     <div class="default-box flex-box"> </div>
                 </div>
+                <h3>No Wrap - Justify Flex Start - Items No Shrink</h3>
+                <div class="container-flex container-flex-start">
+                    <div class="flex-no-shrink default-box flex-box"> </div>
+                    <div class="flex-no-shrink default-box flex-box"> </div>
+                    <div class="flex-no-shrink default-box flex-box"> </div>
+                    <div class="flex-no-shrink default-box flex-box"> </div>
+                    <div class="flex-no-shrink default-box flex-box"> </div>
+                </div>
+                <h3>No Wrap - Justify Flex Start - Items Grow</h3>
+                <div class="container-flex container-flex-start">
+                    <div class="flex-grow default-box flex-box"> </div>
+                    <div class="flex-grow default-box flex-box"> </div>
+                    <div class="flex-grow default-box flex-box"> </div>
+                    <div class="flex-grow default-box flex-box"> </div>
+                    <div class="flex-grow default-box flex-box"> </div>
+                </div>
+                <h3>No Wrap - Justify Flex Start - Items Grow and No Shrink</h3>
+                <div class="container-flex container-flex-start">
+                    <div class="flex-grow flex-no-shrink default-box flex-box"> </div>
+                    <div class="flex-grow flex-no-shrink default-box flex-box"> </div>
+                    <div class="flex-grow flex-no-shrink default-box flex-box"> </div>
+                    <div class="flex-grow flex-no-shrink default-box flex-box"> </div>
+                    <div class="flex-grow flex-no-shrink default-box flex-box"> </div>
+                </div>
+                <h3>No Wrap - Justify Flex Start</h3>
+                <div class="container-flex container-flex-start">
+                    <div class="default-box flex-box"></div>
+                    <div class="default-box flex-box"> </div>
+                    <div class="default-box flex-box"> </div>
+                    <div class="default-box flex-box"> </div>
+                    <div class="default-box flex-box"></div>
+                </div>
                 <h3>Wrap - Justify Space Evenly</h3>
                 <div class="container-flex container-flex-space-evenly container-flex-wrap">
                     <div class="default-box flex-box"> </div>
@@ -183,37 +215,61 @@
                     <div class="default-box flex-box"> </div>
                     <div class="default-box flex-box"> </div>
                 </div>
-                <h3>Wrap - Justify Space Evenly - Align Center</h3>
+                <h3>Wrap - Justify Space Evenly - Align Items Center</h3>
                 <div class="container-flex container-flex-space-evenly container-flex-wrap container-flex-align">
+                    <div style="height:200px;" class="default-box flex-box"> </div>
+                    <div style="height:300px;" class="default-box flex-box"> </div>
+                    <div style="height:150px;" class="self-aligned default-box flex-box"> Self Aligned to Start </div>
                     <div class="default-box flex-box"> </div>
-                    <div class="default-box flex-box"> </div>
-                    <div class="default-box flex-box"> </div>
-                    <div class="default-box flex-box"> </div>
-                    <div class="default-box flex-box"> </div>
+                    <div style="height:250px;" class="default-box flex-box"> </div>
                 </div>
-                <h3>Wrap - Justify Space Evenly - Align Space Evenly</h3>
+                <h3>Wrap - Justify Space Evenly - Align Items Start</h3>
+                <div class="container-flex container-flex-space-evenly container-flex-wrap container-flex-align align-items-start">
+                    <div style="height:200px;" class="default-box flex-box"> </div>
+                    <div style="height:300px;" class="default-box flex-box"> </div>
+                    <div style="height:150px;" class="default-box flex-box"> </div>
+                    <div class="default-box flex-box"> </div>
+                    <div style="height:250px;" class="default-box flex-box"> </div>
+                </div>
+                <h3>Wrap - Justify Space Evenly - Align Items End</h3>
+                <div class="container-flex container-flex-space-evenly container-flex-wrap container-flex-align align-items-end">
+                    <div style="height:200px;" class="default-box flex-box"> </div>
+                    <div style="height:300px;" class="default-box flex-box"> </div>
+                    <div style="height:150px;" class="default-box flex-box"> </div>
+                    <div class="default-box flex-box"> </div>
+                    <div style="height:250px;" class="default-box flex-box"> </div>
+                </div>
+                <h3>Wrap - Justify Space Evenly - Align Content Center</h3>
+                <div class="container-flex container-flex-space-evenly container-flex-wrap container-flex-align">
+                    <div style="height:200px;" class="default-box flex-box"> </div>
+                    <div style="height:300px;" class="default-box flex-box"> </div>
+                    <div style="height:150px;" class="default-box flex-box"> </div>
+                    <div class="default-box flex-box"> </div>
+                    <div style="height:250px;" class="default-box flex-box"> </div>
+                </div>
+                <h3>Wrap - Justify Space Evenly - Align Content Space Evenly</h3>
                 <div class="container-flex container-flex-space-evenly container-flex-wrap container-flex-align container-flex-align-space-evenly">
+                    <div style="height:200px;" class="default-box flex-box"> </div>
+                    <div style="height:300px;" class="default-box flex-box"> </div>
+                    <div style="height:150px;" class="default-box flex-box"> </div>
                     <div class="default-box flex-box"> </div>
-                    <div class="default-box flex-box"> </div>
-                    <div class="default-box flex-box"> </div>
-                    <div class="default-box flex-box"> </div>
-                    <div class="default-box flex-box"> </div>
+                    <div style="height:250px;"class="default-box flex-box"> </div>
                 </div>
-                <h3>Wrap - Justify Space Evenly - Align Start</h3>
+                <h3>Wrap - Justify Space Evenly - Align Content Start</h3>
                 <div class="container-flex container-flex-space-evenly container-flex-wrap container-flex-align container-flex-align-start">
+                    <div style="height:200px;" class="default-box flex-box"> </div>
+                    <div style="height:300px;" class="default-box flex-box"> </div>
+                    <div style="height:150px;" class="default-box flex-box"> </div>
                     <div class="default-box flex-box"> </div>
-                    <div class="default-box flex-box"> </div>
-                    <div class="default-box flex-box"> </div>
-                    <div class="default-box flex-box"> </div>
-                    <div class="default-box flex-box"> </div>
+                    <div style="height:250px;" class="default-box flex-box"> </div>
                 </div>
-                <h3>Wrap - Justify Space Evenly - Align End</h3>
+                <h3>Wrap - Justify Space Evenly - Align Content End</h3>
                 <div class="container-flex container-flex-space-evenly container-flex-wrap container-flex-align container-flex-align-end">
+                    <div style="height:200px;" class="default-box flex-box"> </div>
+                    <div style="height:300px;" class="default-box flex-box"> </div>
+                    <div style="height:150px;" class="default-box flex-box"> </div>
                     <div class="default-box flex-box"> </div>
-                    <div class="default-box flex-box"> </div>
-                    <div class="default-box flex-box"> </div>
-                    <div class="default-box flex-box"> </div>
-                    <div class="default-box flex-box"> </div>
+                    <div style="height:250px;" class="default-box flex-box"> </div>
                 </div>
                 
             </div>
